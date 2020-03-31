@@ -10,15 +10,20 @@ body,
   padding: 0;
 }
 
-.App {
-  font-family: "Montserrat", sans-serif;
-  text-align: center;
-  display: flex;
-
-  svg {
-    height: 100%;
-  }
+* {
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
 }
+
+// .App {
+//   font-family: "Montserrat", sans-serif;
+//   text-align: center;
+//   display: flex;
+
+//   svg {
+//     height: 100%;
+//   }
+// }
 
 .spacer {
   height: 100%;
