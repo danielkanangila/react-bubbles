@@ -3,6 +3,7 @@ import axios from 'axios';
 import styled from 'styled-components';
 import { StyledForm, Error } from './styled-components';
 import Logo from './Logo';
+import {API_URL} from '../utils';
 
 const Login = () => {
   const [credentials, setCredentials] = useState({
@@ -25,7 +26,7 @@ const Login = () => {
         })
         return;
     }
-    axios.post('http://localhost:5000/api/login', credentials)
+    axios.post(`${API_URL}/login`, credentials)
       .then(res => {
             localStorage.setItem("token", res.data.payload);
             window.location = "/bubbles";

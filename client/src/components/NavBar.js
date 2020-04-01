@@ -24,8 +24,9 @@ const NavBar = () => {
                     </MenuIcon>
                     <Logo />
                     <div className="items-right">
-                        <NavLink activeClassName="active" to="/friends">Friends</NavLink>
-                        <NavLink activeClassName="active" onClick={logout} to="/logout">Logout</NavLink>
+                        <NavLink activeClassName="active" onClick={logout} to="/logout">
+                        <i className="fas fa-sign-out-alt"></i>
+                        </NavLink>
                     </div>
                 </Container>
             </Toolbar>
@@ -64,7 +65,6 @@ const Toolbar = styled.nav`
         justify-content: space-between;
         align-items: center;
         &-right {
-            display: none;
             @media (min-width: 600px) {
                 display: flex
             }

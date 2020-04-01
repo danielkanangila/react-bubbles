@@ -11,8 +11,7 @@ const SideNav = () => {
         <Wrapper id="mySidenav" className="sidenav">
             <span onClick={closeSideNav} className="closebtn">&times;</span>
             {/* <div className="clearfix"></div> */}
-            <SideNavLink to="/">Home</SideNavLink>
-            <SideNavLink to="/add-movie">Add Movie</SideNavLink>
+            <SideNavLink to="/buddles">Home</SideNavLink>
         </Wrapper>
     );
 }
