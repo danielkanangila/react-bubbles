@@ -94,6 +94,7 @@ form {
 
   input {
     width: 100px;
+    border: 1px solid #ccc;
   }
 }
 
@@ -104,10 +105,16 @@ form {
 
   button {
     border: none;
-    background-color: black;
+    background-color: #212121;
     color: white;
     padding: 3px 8px;
     margin-top: 16px;
+    cursor: pointer;
+    transition: ease .3s;
+    border-radius: 2.5px;
+    &:hover {
+      background-color: black;
+    }
   }
 }
 
