@@ -12,6 +12,7 @@ export const Error = styled.div`
     color: #fff;
     padding: 15px;
     margin-bottom: 20px;
+    border-radius: 5px;
 `;
 
 const CustomInput = () => {
@@ -34,13 +35,14 @@ const CustomButton = () => {
         padding: 15px;
         font-size: 0.9rem;
         text-transform: uppercase;
-        background-color: #512da8;
+        background-color: #212121;
         color: #fff;
         border-radius: 25px;
         margin: 15px 0;
         transition: .3s;
+        cursor: pointer;
         &:hover {
-            background-color: #311b92;
+            background-color: #000;
         }
     `
 }
@@ -83,7 +85,7 @@ export const Button = styled.button`
     margin: 0;
     background-color: ${props => props.__type === 'primary' ? '#fff' : '#512da8'};
     border: ${props => props.__type === 'primary' ? '1px solid #512da8' : 'none'};
-    color: ${props => props.__type === 'primary' ? '#512da8' : '#fff'};
+    color: ${props => props.__type === 'primary' ? '#212121' : '#fff'};
     &:hover {
         background-color: ${props => props.__type === 'primary' ? '#512da8' : '#311b92'};
         color: ${props => props.__type === 'primary' ? '#fff' : '#fff'};

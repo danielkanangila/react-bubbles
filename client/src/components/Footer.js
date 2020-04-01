@@ -3,11 +3,11 @@ import styled from 'styled-components';
 
 const Footer = () => {
     return(
-        <Wrapper>
+        <Wrapper show={localStorage.getItem('token') ? true : false}>
             <p>Sprint Challenge: Advanced Web Applications - React Bubbles - Marsh 2020</p>
             <p>Advanced Web Application</p>
             <p>By Kabandangi Kanangila - WEBPT12</p>
-            <a href="https://github.com/danielkanangila/Auth-Friends">
+            <a href="https://github.com/danielkanangila/react-bubbles/tree/kabandangi-kanangila">
                 <i className="fab fa-github-square"></i>
                 Project Repository
             </a> 
@@ -16,6 +16,7 @@ const Footer = () => {
 }
 
 const Wrapper = styled.footer`
+    ${props => props.show ? `display: block;` : 'display: none;'}
     width: 100;
     background-color: #212121;
     color: #fff;
