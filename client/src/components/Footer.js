@@ -1,16 +1,20 @@
 import React from 'react';
 import styled from 'styled-components';
+import { Container } from './styled-components';
 
 const Footer = () => {
     return(
         <Wrapper show={localStorage.getItem('token') ? true : false}>
-            <p>Sprint Challenge: Advanced Web Applications - React Bubbles - Marsh 2020</p>
-            <p>Advanced Web Application</p>
-            <p>By Kabandangi Kanangila - WEBPT12</p>
-            <a href="https://github.com/danielkanangila/react-bubbles/tree/kabandangi-kanangila">
-                <i className="fab fa-github-square"></i>
-                Project Repository
-            </a> 
+            <Container>
+            
+                <p>Sprint Challenge: Advanced Web Applications - React Bubbles - Marsh 2020</p>
+                <p>Advanced Web Application</p>
+                <p>By Kabandangi Kanangila - WEBPT12</p>
+                <a href="https://github.com/danielkanangila/react-bubbles/tree/kabandangi-kanangila">
+                    <i className="fab fa-github-square"></i>
+                    Project Repository
+                </a> 
+            </Container>
         </Wrapper>
     )
 }
