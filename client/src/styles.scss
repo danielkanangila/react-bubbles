@@ -10,15 +10,25 @@ body,
   padding: 0;
 }
 
-.App {
-  font-family: "Montserrat", sans-serif;
-  text-align: center;
-  display: flex;
-
-  svg {
-    height: 100%;
-  }
+body {
+  padding-top: 55px;
 }
+
+* {
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+  overflow-x: hidden;
+}
+
+input, button {
+  border: none;
+  background: none;
+  outline: none;
+  appearance: none;
+}
+svg {
+  height: 100%;
+ }
 
 .spacer {
   height: 100%;
@@ -33,7 +43,10 @@ body,
 .colors-wrap {
   height: 100%;
   width: 300px;
-  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+  box-shadow: 1px 1px 6px rgba(0,0,0,0.25);
+  margin: 15px 10px 0;
+  padding: 15px;
+  border-radius: 5px;
 
   ul {
     list-style: none;
@@ -81,6 +94,7 @@ form {
 
   input {
     width: 100px;
+    border: 1px solid #ccc;
   }
 }
 
@@ -91,9 +105,19 @@ form {
 
   button {
     border: none;
-    background-color: black;
+    background-color: #212121;
     color: white;
     padding: 3px 8px;
     margin-top: 16px;
+    cursor: pointer;
+    transition: ease .3s;
+    border-radius: 2.5px;
+    &:hover {
+      background-color: black;
+    }
   }
+}
+
+.navbar.hide {
+  display: none;
 }
